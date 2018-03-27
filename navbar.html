@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/floating-labels.css"/>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark flex-column flex-md-row bd-navbar">
+        <a class="navbar-brand" style="color: #ececf6" href="#">
+            <img src="assets/Plogo_burned.png" width="36" height="36">Participa
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarW1" aria-controls="navbarW1" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarW1">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Inicio</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
+                <li class=" nav-item">
+                    <a class="nav-link p-2" href="https://twitter.com/cise_duarte" target="_blank" rel="noopener" aria-label="Twitter">
+                        <svg class=" navbar-nav-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" focusable="false" style="Width: 23px">
+                            <title>Twitter</title>
+                            <path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-48.9 158.8c.2 2.8.2 5.7.2 8.5 0 86.7-66 186.6-186.6 186.6-37.2 0-71.7-10.8-100.7-29.4 5.3.6 10.4.8 15.8.8 30.7 0 58.9-10.4 81.4-28-28.8-.6-53-19.5-61.3-45.5 10.1 1.5 19.2 1.5 29.6-1.2-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3a65.447 65.447 0 0 1-29.2-54.6c0-12.2 3.2-23.4 8.9-33.1 32.3 39.8 80.8 65.8 135.2 68.6-9.3-44.5 24-80.6 64-80.6 18.9 0 35.9 7.9 47.9 20.7 14.8-2.8 29-8.3 41.6-15.8-4.9 15.2-15.2 28-28.8 36.1 13.2-1.4 26-5.1 37.8-10.2-8.9 13.1-20.1 24.7-32.9 34z"
+                                fill="currentColor" fill-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                </li>
+                <li class=" nav-item">
+                    <a class=" nav-link p-2" href="https://www.facebook.com/RobCISE?ref=bookmarks" target="_blank" rel="noopener" arial-label="Facebook">
+                        <title>Facebook</title>
+                        <svg class=" navbar-nav-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" focusable="false" style="width:23px">
+                            <path d="M448 80v352c0 26.5-21.5 48-48 48h-85.3V302.8h60.6l8.7-67.6h-69.3V192c0-19.6 5.4-32.9 33.5-32.9H384V98.7c-6.2-.8-27.4-2.7-52.2-2.7-51.6 0-87 31.5-87 89.4v49.9H184v67.6h60.9V480H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48z"
+                                fill="currentColor" fill-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                </li>
+                <li class=" nav-item">
+                    <a class=" nav-link p-2" href="login.html" aria-label="Login" data-toggle="modal" data-target="#Login01">
+                        <title>Login</title>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" focusable="false" style="width: 20px">
+                            <path d="M120 72c0-39.765 32.235-72 72-72s72 32.235 72 72c0 39.764-32.235 72-72 72s-72-32.236-72-72zm254.627 1.373c-12.496-12.497-32.758-12.497-45.254 0L242.745 160H141.254L54.627 73.373c-12.496-12.497-32.758-12.497-45.254 0-12.497 12.497-12.497 32.758 0 45.255L104 213.254V480c0 17.673 14.327 32 32 32h16c17.673 0 32-14.327 32-32V368h16v112c0 17.673 14.327 32 32 32h16c17.673 0 32-14.327 32-32V213.254l94.627-94.627c12.497-12.497 12.497-32.757 0-45.254z"
+                                fill="currentColor" fill-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="modal" tabindex="-1" role="dialog" aria-labelledby="Login" aria-hidden="true" id="Login01">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            </div>
+        </div>
+    </div>
+
+    <script>
+            $(function () {
+                $("#Login01").load("login.html");
+            })
+        </script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
